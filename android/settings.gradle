@@ -1,0 +1,19 @@
+rootProject.name = 'yincheng'
+include ':jcore-react-native'
+project(':jcore-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/jcore-react-native/android')
+
+include ':jpush-react-native'
+project(':jpush-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/jpush-react-native/android')
+
+include ':react-native-linear-gradient'
+project(':react-native-linear-gradient').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-linear-gradient/android')
+
+include ':app'
+include ':react-native-wechat'
+project(':react-native-wechat').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-wechat/android')
+
+include ':react-native-baidu-map'
+project(':react-native-baidu-map').projectDir = new File(settingsDir, '../node_modules/react-native-baidu-map/android')
+
+include ':react-native-image-picker'
+project(':react-native-image-picker').projectDir = new File(settingsDir, '../node_modules/react-native-image-picker/android')
